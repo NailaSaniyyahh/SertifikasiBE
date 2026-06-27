@@ -1,0 +1,236 @@
+{
+  "info": {
+    "_postman_id": "1b548a9b-0737-40b1-9e9f-c362afaaa779",
+    "name": "Mini Commerce Kampus",
+    "description": "Berisi semua request yang ada pada catalog dan order service",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "26314637",
+    "_collection_link": "https://go.postman.co/collection/26314637-1b548a9b-0737-40b1-9e9f-c362afaaa779?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Catalog",
+      "item": [
+        {
+          "name": "Buat Produk Baru",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8081/api/products",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8081",
+              "path": [
+                "api",
+                "products"
+              ]
+            },
+            "description": "Contoh Body JSON:  \n{\n\n\"sku\": \"SKU05\",\n\n\"name\" : \"product5\",\n\n\"price\" : 30000,\n\n\"stock\" : 12\n\n}"
+          },
+          "response": []
+        },
+        {
+          "name": "Lihat Daftar Produk",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8081/api/products",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8081",
+              "path": [
+                "api",
+                "products"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get product by id",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8081/api/products/{id}",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8081",
+              "path": [
+                "api",
+                "products",
+                "{id}"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Update stock",
+          "request": {
+            "method": "PATCH",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8081/api/products/{id}/stock",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8081",
+              "path": [
+                "api",
+                "products",
+                "{id}",
+                "stock"
+              ]
+            },
+            "description": "Contoh Body JSON:  \n{\n\n\"sku\": \"SKU05\",\n\n\"name\" : \"product5\",\n\n\"price\" : 30000,\n\n\"stock\" : 12\n\n}"
+          },
+          "response": []
+        },
+        {
+          "name": "Update status",
+          "request": {
+            "method": "PATCH",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8081/api/products/{id}/status",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8081",
+              "path": [
+                "api",
+                "products",
+                "{id}",
+                "status"
+              ]
+            },
+            "description": "Contoh Body JSON:  \n{\n\n\"status\": \"INACTIVE\"\n\n}"
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Order",
+      "item": [
+        {
+          "name": "Create order baru",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8082/api/orders",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8082",
+              "path": [
+                "api",
+                "orders"
+              ]
+            },
+            "description": "contoh body JSON:  \n{   \n\n\"customerName\": \"sani\",   \n\n\"customerEmail\" : \"sani@gmail.com\",   \n\n\"items\":\n\n\\[    {     \n\n\"productId\": 2,     \n\n\"quantity\": 1   \n\n},   \n\n{     \n\n\"productId\": 5,     \n\n\"quantity\": 1   \n\n}  \\]}"
+          },
+          "response": []
+        },
+        {
+          "name": "Get all order",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8082/api/orders",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8082",
+              "path": [
+                "api",
+                "orders"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get order by id",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8082/api/orders/{id}",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8082",
+              "path": [
+                "api",
+                "orders",
+                "{id}"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Bayar Order",
+          "request": {
+            "method": "PATCH",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8082/api/orders/{id}/pay",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8082",
+              "path": [
+                "api",
+                "orders",
+                "{id}",
+                "pay"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Batalkan order",
+          "request": {
+            "method": "PATCH",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8082/api/orders/{id}/cancel",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8082",
+              "path": [
+                "api",
+                "orders",
+                "{id}",
+                "cancel"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
+}
