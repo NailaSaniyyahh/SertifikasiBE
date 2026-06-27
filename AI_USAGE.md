@@ -23,14 +23,14 @@ Isi file ini jika menggunakan AI secara signifikan selama pengerjaan.
 - Membantu debugging komunikasi HTTP antara Catalog Service dan Order Service
 - Membantu konfigurasi PostgreSQL dan migrasi dari database H2 ke PostgreSQL
 
-## Prompt Penting yang Digunakan
+## **PROMP**t Penting yang Digunakan
 
-Tempelkan beberapa prompt penting.
+Tempelkan beberapa **PROMP**t penting.
 
 ```text
-prompt:
+**PROMP**t:
 bisa ga kamu jelasin terkait pembentukkan suatu microservices tuh bagaimana tapi dalam bahasa yg mudah dipahami, seperti bagaimana cara membuat 2 service yg saling berkomunikasi kayak aku tuh harus tau apa duluu, tapi ini konteksnya terkait service secara keseluruhan ya bukan merujuk ke tugas di atas
-jawaban:
+**JAWABAN**:
 Bisa. Justru menurutku kalau belajar microservices jangan langsung mikir "gimana cara bikin dua project Spring Boot". Yang harus dipahami dulu adalah **cara berpikirnya**. Setelah pola pikirnya paham, implementasinya di Spring Boot jadi jauh lebih masuk akal.
 
 Aku jelaskan dari nol ya.
@@ -255,7 +255,7 @@ Catalog menjawab
 }
 ```
 
-Order menerima jawaban tersebut.
+Order menerima **JAWABAN** tersebut.
 
 Jadi komunikasi terjadi melalui HTTP.
 
@@ -688,20 +688,20 @@ Kalau keenam konsep ini sudah dipahami, maka belajar implementasi menggunakan Sp
 
 ```
 ````text
-promp:
+**PROMP**:
 berarti perlu ada tools lagi utnuk membuat si database nya kah? kayak dbeaver kah?
 oke kan komunikasinya pake http ya, hmm berarti main di API pakai postman?
 oke misal untuk catalog service berarti berhubungan dengan produknya kek CRUD produknya?
 klo order service CRUD order juga?
 
-jawaban:
+**JAWABAN**:
 Iyaaa, pemahamanmu sudah mulai benar. Aku jawab satu-satu ya, karena ini memang konsep dasar yang penting dipahami.
 
 ---
 
 # 1. Berarti perlu tools lagi untuk membuat database? Kayak DBeaver?
 
-**Jawabannya: iya, tapi DBeaver bukan databasenya.**
+****JAWABAN**nya: iya, tapi DBeaver bukan databasenya.**
 
 Banyak yang salah paham soal ini.
 
@@ -1076,13 +1076,13 @@ Jadi di microservices, setiap service seperti **pegawai dengan tugas khusus**. M
 
 ```
 ````text
-promp:
+**PROMP**:
 oke oke aku udh ngerti tpi aku kalaujava tuh masih suka susah untuk implementasinya, 
 misal ak skrg udah bikin nih catalog service ada controller, dto,model, repository, dan service,
 tapi aku tuh masih kurang paham bagaimana membuatnya secara berurut tuh kek harus dari mana dulu sihh gitu..
 terus keluarannya tuh aku mah expect nya crud dulu belum pake database gitu, nah kira kira untuk memulainya tuh ak hrs bikin file dari mana dulu ya biar berurut dan aku paham
 
-jawaban:
+**JAWABAN**:
 Nahh ini sebenarnya masalah yang dialami hampir semua orang yang baru belajar Spring Boot. Dan menurutku penyebabnya bukan karena Java-nya susah, tapi karena kebanyakan tutorial ngajarnya **langsung coding**, bukan ngajarin **urutan berpikir**.
 
 Kalau aku yang ngajarin, aku **nggak akan mulai dari Controller**.
@@ -1588,22 +1588,22 @@ Kalau tiga pertanyaan itu sudah bisa kamu jawab sebelum mulai coding, biasanya k
 
 ```
 ````text
-promp:
+**PROMP**:
 berarti perlu ada tools lagi utnuk membuat si database nya kah? kayak dbeaver kah?
 oke kan komunikasinya pake http ya, hmm berarti main di API pakai postman?
 oke misal untuk catalog service berarti berhubungan dengan produknya kek CRUD produknya?
 klo order service CRUD order juga?
 
-jawaban:
+**JAWABAN**:
 
 ```
 ````text
-promp:
+**PROMP**:
 berarti aku mulai dari buat entity?eh entity sm model apa bedanya ya soalnya aku pernah belajarnya model yg isinya tuh apa aja yg perlu ada untuk service itu gitu, gini urutannya gak?
 pom-application.properties-model-service-controller-repository (coba jelasin secara singkat 1 paragrf aja isi dr masing-masing file tuh apa )
 kalau DTO ga dibuat kah?
 
-jawaban:
+**JAWABAN**:
 Nah, pertanyaanmu bagus banget. Kamu mulai masuk ke bagian yang sering bikin bingung orang yang baru belajar Spring Boot.
 
 ## 1. Entity sama Model itu bedanya apa?
@@ -1883,13 +1883,13 @@ Menurutku urutan ini paling mudah dipahami karena kamu membangun fondasi sedikit
 
 ```
 ````text
-promp:
+**PROMP**:
 eh tunggu berarti untuk skrg walaupun aku blm pake databse postgre nya ttp aja di model tuh isiinya ada anotation @entity gitu? itu perlu kan di model/entity tuh kek anotation @table @column dll tuh?
 
-jawaban:
+**JAWABAN**:
 NAHHH ini pertanyaan yang tepat banget. Ini juga salah satu hal yang bikin banyak pemula bingung.
 
-Jawaban singkatnya:
+**JAWABAN** singkatnya:
 
 > **Kalau belum pakai database (JPA), TIDAK PERLU pakai `@Entity`, `@Table`, `@Column`, dll.**
 
@@ -2102,10 +2102,10 @@ Karena dari obrolan kita selama ini, aku melihat kamu lebih mudah memahami sesua
 
 ```
 ````text
-promp:
+**PROMP**:
 untuk tipe data createdAt dan updatedAt tuh mendingan instant apa localDateTime ya?
 
-jawaban:
+**JAWABAN**:
 Ini pertanyaan yang bagus, karena memang di Java modern ada beberapa pilihan. Kalau untuk **belajar Spring Boot** dan nanti kemungkinan lanjut ke PostgreSQL, aku menyarankan begini.
 
 ## Kalau untuk project belajar → pakai `LocalDateTime`
@@ -2213,10 +2213,10 @@ Itu karena mereka mengikuti praktik yang cukup umum untuk aplikasi production. N
 
 ```
 ````text
-promp:
+**PROMP**:
 coba kasih contoh kecil untuk pembuatan service tuh harus seperti apa
 
-jawaban:
+**JAWABAN**:
 Nahh ini dia yang paling penting. Menurutku jangan langsung lihat kode dulu, tapi pahami **cara berpikir Service**.
 
 Misalnya kamu ingin membuat fitur **Create Product**.
@@ -2590,10 +2590,10 @@ Kalau flow ini sudah jelas di kepalamu, menulis kode Java biasanya menjadi jauh 
 
 ```
 ````text
-promp:
+**PROMP**:
 eh tapi aku baca dari web javaguide harus bikin product request dan produk respons sebelum ke service
 
-jawaban:
+**JAWABAN**:
 HAHAHA iyaa 🤣🤣 Aku tahu kenapa kamu jadi bingung. Kamu sekarang lagi ketemu **dua gaya penulisan Spring Boot** yang sama-sama benar.
 
 Dan menurutku ini waktu yang tepat untuk menjelaskan **kenapa ada ProductRequest dan ProductResponse**.
@@ -2959,10 +2959,10 @@ Menurutku ini adalah urutan yang paling pas untuk kondisimu sekarang. **Tidak te
 
 ```
 ````text
-promp:
+**PROMP**:
 eh aku bingung jadi apa bedanya dto dengan entity atau model?
 
-jawaban:
+**JAWABAN**:
 WKWKWK 😭😭 Nah ini dia yang hampir semua orang bingung waktu pertama belajar Spring Boot. Dulu aku juga kalau dijelasin cuma definisi "DTO untuk transfer data" pasti tetap bingung.
 
 Aku coba jelaskan dengan contoh Catalog Service-mu ya.
@@ -2992,7 +2992,7 @@ updatedAt
 status
 ```
 
-Jawabannya:
+**JAWABAN**nya:
 
 **Tidak.**
 
@@ -3357,10 +3357,10 @@ Jadi **Entity fokus ke penyimpanan data**, sedangkan **DTO fokus ke komunikasi a
 
 ```
 ````text
-promp:
+**PROMP**:
 oh berarti dto tuh data2 yg dikirin ke user nntinya mksdnya datadata yg bisa dilihat user? sedangkan entity data2 yg gabisa dilihat user gtiu?
 
-jawaban:
+**JAWABAN**:
 IYAA!! 😭👏👏 Kamu udah hampir nangkep. Tapi aku mau lurusin sedikit supaya nanti konsepnya benar 100%.
 
 Kalimatmu:
@@ -3686,7 +3686,7 @@ Jadi DTO **tidak selalu berarti "data yang dilihat user"**, tetapi lebih tepatny
 
 ```
 ````text
-promp:
+**PROMP**:
 gini betul ga isi dari respons dan request aku?
 package com.commerce_campus.catalog_service.dto;
 
@@ -3731,7 +3731,7 @@ public class CatalogRequest{
 }
 
 
-jawaban:
+**JAWABAN**:
 **IYA! Ini sudah 90% benar.** 👏👏 Sekarang aku tinggal kasih beberapa masukan kecil supaya lebih sesuai dengan praktik Spring Boot.
 
 ---
@@ -4001,7 +4001,7 @@ Proses **konversi Request → Entity → Response** adalah inti dari penggunaan 
 
 ```
 ````text
-promp:
+**PROMP**:
 di model order service perlu ada order items ga sii soalnya di bussiness rules gini:
 Business Rules
 Customer name wajib, email harus valid
@@ -4014,7 +4014,7 @@ Hanya PENDING yang bisa dibayar/dibatalkan
 Data produk disimpan sebagai SNAPSHOT (nama
 & harga saat order)
 
-jawaban:
+**JAWABAN**:
 Menurutku **IYA, perlu.** Bahkan dari business rules yang kamu kirim, aku langsung kepikiran kalau desainnya memang sebaiknya memakai **2 entity**:
 
 * `Order`
@@ -4294,10 +4294,10 @@ Jadi menurutku, dengan business rule yang ada sekarang, **menggunakan `Order` da
 
 ```
 ```teks
-promp:
+**PROMP**:
 ini kenapa yaa di orerresponse perasaan aku udah ngikutin catalog deh bener tp serror
 
-jawaban:
+**JAWABAN**:
 WKWKWK tenang 😂 ini bukan error yang susah. Aku langsung tahu penyebabnya dari screenshot.
 
 ## Penyebabnya
@@ -4477,7 +4477,7 @@ Jangan pernah mencampur Entity dan DTO dalam satu Response. Kalau `OrderResponse
 
 ```
 ```teks
-promp:
+**PROMP**:
 hmmmm coba debugging orderservice aku, bingungg kenapa orderRepository error ya?
 package com.commerce_campus.order_service.service;
 
@@ -4547,7 +4547,7 @@ public class OrderService {
 }
 
 
-jawaban:
+**JAWABAN**:
 WKWKWK aku lihat sekilas aja udah nemu **beberapa error**. 😆 Yang bikin `orderRepository` merah kemungkinan **bukan karena repository-nya**, tapi karena ada error lain di class ini sehingga IntelliJ ikut bingung.
 
 Aku review satu-satu ya.
@@ -4761,10 +4761,10 @@ Aku curiga 90% masalahnya ada di salah satu dari dua file itu. Kalau aku lihat k
 
 ```
 ```teks
-promp:
+**PROMP**:
 eh aku aneh deh harusnya order status ya itu bukan catalog status? 
 
-jawaban:
+**JAWABAN**:
 HAHAHAH 😭😭 IYA LAGI! Kamu teliti banget. Aku yang salah konteks tadi.
 
 Yang dicek di situ **bukan `OrderStatus`**, melainkan **status produk dari Catalog Service**.
