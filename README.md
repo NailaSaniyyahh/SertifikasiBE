@@ -28,5 +28,6 @@ Fitur:
 ### 4. run catalog-service
 ### 5. run order-service
 ### 6. lakukan semua yang ada pada postman collection dan jangan lupa cek secara berkala database
+
 ##### POSTMAN COLLLECTION
-'https://www.postman.com/interstellar-capsule-86813/workspace/my-workspace/documentation/26314637-1b548a9b-0737-40b1-9e9f-c362afaaa779'
+https://www.postman.com/interstellar-capsule-86813/workspace/my-workspace/documentation/26314637-1b548a9b-0737-40b1-9e9f-c362afaaa779
