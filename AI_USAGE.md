@@ -8,10 +8,6 @@ Isi file ini jika menggunakan AI secara signifikan selama pengerjaan.
 
 
 ## Bagian yang Dibantu AI
-
-Tuliskan bagian mana saja yang dibantu AI.
-
-Contoh:
 - Menjelaskan konsep Entity, Repository, Service, Controller, dan DTO pada Spring Boot dari nol
 - Menjelaskan perbedaan antara Entity (Model) dan DTO (Request & Response)
 - Membantu bagaimana membuat struktur DTO 
